@@ -4,7 +4,7 @@
 // 
 // Initial revision: Donald G Dansereau, 2022
 
-#include "OccupancyMapBase.h"
+#include "OccupancyMapBase.cpp"
 
 #include <iostream>
 #include <string>

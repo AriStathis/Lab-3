@@ -1,8 +1,8 @@
 
 // a start on a test file for developing your occupancy maps
-
-
-#include "OccupancyMapHash.h"
+#include "OccupancyMapBase.h"
+#include "OccupancyMapSet.h"
+#include "OccupancyMapVector.h"
 #include <iostream>
 
 //-----------------------------------------------------------------------------
@@ -11,7 +11,7 @@ int main()
 
   // Test basic functionality, development purposes only; remove before shipping
   {
-    COccupancyMapHash myOccupancyMap;
+    COccupancyMapSet myOccupancyMap;
 
     std::pair<int,int> TestLocation = std::make_pair(3, 4);
     myOccupancyMap.AddOccupiedLocation( TestLocation );
@@ -26,7 +26,7 @@ int main()
 
   {
     // More comprehensive test
-    COccupancyMapHash myMap;
+    COccupancyMapSet myMap;
     myMap.EvalPerformance( "ExampleObservations_Small.txt", "ExampleNotObserved_Small.txt" );
   }
 

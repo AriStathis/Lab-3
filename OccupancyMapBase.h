@@ -6,7 +6,7 @@
 // 1) record a set of observations as known occupied locations, and
 // 2) test of a given location has been observed as being occupied
 //
-// The base class knows how to evaluate the performance of a given occupancy map implementation by :
+// The base class knows how to evaluate the performance of a given occupancy map implementation by:
 // 1) loading a pair of test files, one defining a list of test points corresponding to observed occupied
 // locations, and one defining a set of test points corresponding to unoccupied space,
 // 2) populating the occupancy map with observed points by calling its AddOccupiedLocation function, and
@@ -38,7 +38,6 @@
 class COccupancyMapBase
 {
   public:
-   
     // Return the name of the approach as a string, for display purposes
     virtual std::string GetNameOfApproach() = 0;
 
@@ -58,17 +57,15 @@ class COccupancyMapBase
     void EvalPerformance( std::string ObservationsFName, std::string NotObservedFName );
     
 
-  private:
+  protected:
     //--Data------------------------------------------------------------------------------------------------
-    std::vector<std::pair<int,int>> mObservedPoints;    // A set of test points that correspond to observations
-    std::vector<std::pair<int,int>> mNotObservedPoints; // A set of test points that don't correspond to observations
+    std::vector<std::pair<int,int >> mObservedPoints;    // A set of test points that correspond to observations
+    std::vector<std::pair<int,int >> mNotObservedPoints; // A set of test points that don't correspond to observations
    
     //--Helper Functions------------------------------------------------------------------------------------
     void PopulateForEval( std::string ObservationsFName, std::string NotObservedFName );   // load a file of test points for testing
     double FindTotRuntime();                     // validate and time a derived-class map, returns runtime in ms
 };
 
-
-
-#endif // _OCCUPANCYMAPBASE_H
+#endif 
 
