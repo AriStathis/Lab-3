@@ -1,0 +1,3 @@
+/Users/aristathis/Documents/GitHub/Lab-3/build/CMakeFiles/LAB-3.dir
+/Users/aristathis/Documents/GitHub/Lab-3/build/CMakeFiles/edit_cache.dir
+/Users/aristathis/Documents/GitHub/Lab-3/build/CMakeFiles/rebuild_cache.dir
