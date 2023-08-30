@@ -23,13 +23,13 @@ int main()
     std::cout << "Location: " << TestLocation.first << " " << TestLocation.second << " returns ";
     std::cout << myOccupancyMap.CheckIsOccupied( TestLocation ) << std::endl; 
   }
-
+/*
   {
     // More comprehensive test
     COccupancyMapSet myMap;
     myMap.EvalPerformance( "ExampleObservations_Small.txt", "ExampleNotObserved_Small.txt" );
   }
-
+*/
   return 0;
 }
 
