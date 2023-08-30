@@ -8,6 +8,8 @@ set(SRC_FILES
     src/OccupancyMapSet.cpp
     src/OccupancyMapVector.cpp)
 
+SET(CMAKE_CXX_FLAGS "-std=c++11")
+
 include_directories(
     include
     examples

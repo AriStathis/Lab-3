@@ -6,7 +6,7 @@
 #include <utility>       
 #include <vector>
 
-class OccupancyMapVector: public COccupancyMapBase
+class COccupancyMapVector: public COccupancyMapBase
 {
     public:
         void AddOccupiedLocation(std::pair<int,int> Location);
