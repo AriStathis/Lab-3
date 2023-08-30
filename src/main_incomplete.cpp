@@ -11,17 +11,22 @@ int main()
 
   // Test basic functionality, development purposes only; remove before shipping
   {
-    COccupancyMapSet myOccupancyMap;
+    COccupancyMapSet myOccupancySet;
+    COccupancyMapVector myOccupancyVector;
 
-    std::pair<int,int> TestLocation = std::make_pair(3, 4);
-    myOccupancyMap.AddOccupiedLocation( TestLocation );
+    std::pair<int,int> TestLocation1 = std::make_pair(3, 4);
+    myOccupancySet.AddOccupiedLocation( TestLocation1 );
+    myOccupancyVector.AddOccupiedLocation( TestLocation1 );
+
     
-    std::cout << "Location: " << TestLocation.first << " " << TestLocation.second << " returns ";
-    std::cout << myOccupancyMap.CheckIsOccupied( TestLocation ) << std::endl; 
-    
-    TestLocation.first = 0;
-    std::cout << "Location: " << TestLocation.first << " " << TestLocation.second << " returns ";
-    std::cout << myOccupancyMap.CheckIsOccupied( TestLocation ) << std::endl; 
+    std::cout << "Location: " << TestLocation1.first << " " << TestLocation1.second << " returns ";
+    std::cout << myOccupancySet.CheckIsOccupied( TestLocation1 ) << " and "   
+      << myOccupancyVector.CheckIsOccupied( TestLocation1 ) << std::endl; 
+
+    TestLocation1.first = 0;
+    std::cout << "Location: " << TestLocation1.first << " " << TestLocation1.second << " returns ";
+    std::cout << myOccupancySet.CheckIsOccupied( TestLocation1 ) << " and "     
+      << myOccupancyVector.CheckIsOccupied( TestLocation1 ) << std::endl;     
   }
 /*
   {
