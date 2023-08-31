@@ -10,12 +10,19 @@
 class COccupancyMapVector: public COccupancyMapBase
 {
     public:
+        // Initialise the 2D vector map
         COccupancyMapVector();
+
+        // Add occupied locations
         void AddOccupiedLocation(std::pair<int,int> Location);
+
+        // Checking if locations are occupied
         bool CheckIsOccupied( std::pair<int,int> Location );
+
+        // Return the name of the approach 
         std::string GetNameOfApproach();
     private:
-        std::vector<std::vector<int>> VectorOccupancyMap;
+        std::vector<std::vector<int>> VectorOccupancyMap;               // Obser
 };
 
 #endif 

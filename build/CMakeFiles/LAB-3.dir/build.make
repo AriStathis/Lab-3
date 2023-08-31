@@ -69,19 +69,19 @@ include CMakeFiles/LAB-3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/LAB-3.dir/flags.make
 
-CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o: CMakeFiles/LAB-3.dir/flags.make
-CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o: /Users/aristathis/Documents/GitHub/Lab-3/src/main_incomplete.cpp
-CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o: CMakeFiles/LAB-3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aristathis/Documents/GitHub/Lab-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o -MF CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o.d -o CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o -c /Users/aristathis/Documents/GitHub/Lab-3/src/main_incomplete.cpp
+CMakeFiles/LAB-3.dir/src/main.cpp.o: CMakeFiles/LAB-3.dir/flags.make
+CMakeFiles/LAB-3.dir/src/main.cpp.o: /Users/aristathis/Documents/GitHub/Lab-3/src/main.cpp
+CMakeFiles/LAB-3.dir/src/main.cpp.o: CMakeFiles/LAB-3.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/aristathis/Documents/GitHub/Lab-3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LAB-3.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LAB-3.dir/src/main.cpp.o -MF CMakeFiles/LAB-3.dir/src/main.cpp.o.d -o CMakeFiles/LAB-3.dir/src/main.cpp.o -c /Users/aristathis/Documents/GitHub/Lab-3/src/main.cpp
 
-CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aristathis/Documents/GitHub/Lab-3/src/main_incomplete.cpp > CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.i
+CMakeFiles/LAB-3.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LAB-3.dir/src/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aristathis/Documents/GitHub/Lab-3/src/main.cpp > CMakeFiles/LAB-3.dir/src/main.cpp.i
 
-CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aristathis/Documents/GitHub/Lab-3/src/main_incomplete.cpp -o CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.s
+CMakeFiles/LAB-3.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LAB-3.dir/src/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aristathis/Documents/GitHub/Lab-3/src/main.cpp -o CMakeFiles/LAB-3.dir/src/main.cpp.s
 
 CMakeFiles/LAB-3.dir/src/OccupancyMapBase.cpp.o: CMakeFiles/LAB-3.dir/flags.make
 CMakeFiles/LAB-3.dir/src/OccupancyMapBase.cpp.o: /Users/aristathis/Documents/GitHub/Lab-3/src/OccupancyMapBase.cpp
@@ -141,7 +141,7 @@ CMakeFiles/LAB-3.dir/src/TestMap.cpp.s: cmake_force
 
 # Object files for target LAB-3
 LAB__3_OBJECTS = \
-"CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o" \
+"CMakeFiles/LAB-3.dir/src/main.cpp.o" \
 "CMakeFiles/LAB-3.dir/src/OccupancyMapBase.cpp.o" \
 "CMakeFiles/LAB-3.dir/src/OccupancyMapSet.cpp.o" \
 "CMakeFiles/LAB-3.dir/src/OccupancyMapVector.cpp.o" \
@@ -150,7 +150,7 @@ LAB__3_OBJECTS = \
 # External object files for target LAB-3
 LAB__3_EXTERNAL_OBJECTS =
 
-LAB-3: CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o
+LAB-3: CMakeFiles/LAB-3.dir/src/main.cpp.o
 LAB-3: CMakeFiles/LAB-3.dir/src/OccupancyMapBase.cpp.o
 LAB-3: CMakeFiles/LAB-3.dir/src/OccupancyMapSet.cpp.o
 LAB-3: CMakeFiles/LAB-3.dir/src/OccupancyMapVector.cpp.o

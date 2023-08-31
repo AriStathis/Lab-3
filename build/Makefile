@@ -225,29 +225,29 @@ src/TestMap.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/TestMap.cpp.s
 .PHONY : src/TestMap.cpp.s
 
-src/main_incomplete.o: src/main_incomplete.cpp.o
-.PHONY : src/main_incomplete.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/main_incomplete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o
-.PHONY : src/main_incomplete.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/main_incomplete.i: src/main_incomplete.cpp.i
-.PHONY : src/main_incomplete.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/main_incomplete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.i
-.PHONY : src/main_incomplete.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/main_incomplete.s: src/main_incomplete.cpp.s
-.PHONY : src/main_incomplete.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/main_incomplete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.s
-.PHONY : src/main_incomplete.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -270,9 +270,9 @@ help:
 	@echo "... src/TestMap.o"
 	@echo "... src/TestMap.i"
 	@echo "... src/TestMap.s"
-	@echo "... src/main_incomplete.o"
-	@echo "... src/main_incomplete.i"
-	@echo "... src/main_incomplete.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

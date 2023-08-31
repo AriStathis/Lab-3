@@ -14,7 +14,7 @@ void COccupancyMapSet::AddOccupiedLocation(std::pair<int,int> Location)
         return;
     }
     // Insert the paid
-    ObservedSet.insert(Location);
+    SetOccupancyMap.insert(Location);
 }
 
 // Check if the location is in the occupied set 
@@ -24,7 +24,7 @@ bool COccupancyMapSet::CheckIsOccupied( std::pair<int,int> Location )
     bool Result = false;
 
     // Check if the location is in the set
-    if (ObservedSet.find(Location) != ObservedSet.end())
+    if (SetOccupancyMap.find(Location) != SetOccupancyMap.end())
         {
             // Location is in the observed set
             Result = true;

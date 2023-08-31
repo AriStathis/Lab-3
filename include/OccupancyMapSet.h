@@ -10,12 +10,18 @@
 class COccupancyMapSet: public COccupancyMapBase
 {
     public:
+        // Adding occupied location onto map
         void AddOccupiedLocation(std::pair<int,int> Location);
+
+        // Checking if location is occupied on the map
         bool CheckIsOccupied( std::pair<int,int> Location );
+
+        // Returns name of approach
         std::string GetNameOfApproach();       
     
     private:
-        std::set<std::pair<int, int>> ObservedSet;
+        std::set<std::pair<int, int>> SetOccupancyMap;              // Observed set of points
 };
 
 #endif 
+
