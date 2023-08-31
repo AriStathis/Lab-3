@@ -1,8 +1,8 @@
 #include "OccupancyMapVector.h"
 #include <iostream>
 
-static const int Rows = 240;
-static const int Columns = 240;
+static const int Rows = 241;
+static const int Columns = 241;
 
 COccupancyMapVector::COccupancyMapVector()
 {

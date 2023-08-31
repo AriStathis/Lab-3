@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/LAB-3.dir/src/OccupancyMapSet.cpp.o.d"
   "CMakeFiles/LAB-3.dir/src/OccupancyMapVector.cpp.o"
   "CMakeFiles/LAB-3.dir/src/OccupancyMapVector.cpp.o.d"
+  "CMakeFiles/LAB-3.dir/src/TestMap.cpp.o"
+  "CMakeFiles/LAB-3.dir/src/TestMap.cpp.o.d"
   "CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o"
   "CMakeFiles/LAB-3.dir/src/main_incomplete.cpp.o.d"
   "LAB-3"

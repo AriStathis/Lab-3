@@ -201,6 +201,30 @@ src/OccupancyMapVector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/OccupancyMapVector.cpp.s
 .PHONY : src/OccupancyMapVector.cpp.s
 
+src/TestMap.o: src/TestMap.cpp.o
+.PHONY : src/TestMap.o
+
+# target to build an object file
+src/TestMap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/TestMap.cpp.o
+.PHONY : src/TestMap.cpp.o
+
+src/TestMap.i: src/TestMap.cpp.i
+.PHONY : src/TestMap.i
+
+# target to preprocess a source file
+src/TestMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/TestMap.cpp.i
+.PHONY : src/TestMap.cpp.i
+
+src/TestMap.s: src/TestMap.cpp.s
+.PHONY : src/TestMap.s
+
+# target to generate assembly for a file
+src/TestMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LAB-3.dir/build.make CMakeFiles/LAB-3.dir/src/TestMap.cpp.s
+.PHONY : src/TestMap.cpp.s
+
 src/main_incomplete.o: src/main_incomplete.cpp.o
 .PHONY : src/main_incomplete.o
 
@@ -243,6 +267,9 @@ help:
 	@echo "... src/OccupancyMapVector.o"
 	@echo "... src/OccupancyMapVector.i"
 	@echo "... src/OccupancyMapVector.s"
+	@echo "... src/TestMap.o"
+	@echo "... src/TestMap.i"
+	@echo "... src/TestMap.s"
 	@echo "... src/main_incomplete.o"
 	@echo "... src/main_incomplete.i"
 	@echo "... src/main_incomplete.s"

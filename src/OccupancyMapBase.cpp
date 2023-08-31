@@ -25,7 +25,7 @@ void COccupancyMapBase::PopulateForEval( std::string ObservationsFName, std::str
     {
       InFile >> ReadVal.first;
       InFile >> ReadVal.second;
-      
+    
       if( InFile.eof() )
       {
         break;
@@ -33,7 +33,6 @@ void COccupancyMapBase::PopulateForEval( std::string ObservationsFName, std::str
       
       mObservedPoints.push_back( ReadVal );  // add to the tester's store of observed points
       AddOccupiedLocation( ReadVal );        // add to the derived class store of observed points
-      // std::cout << "Read " << ReadVal.first << " " << ReadVal.second << std::endl;
     }
     std::cout << "PopulateForEval loaded " << mObservedPoints.size() << " observed test points" << std::endl;
   }
@@ -56,7 +55,6 @@ void COccupancyMapBase::PopulateForEval( std::string ObservationsFName, std::str
       }
       
       mNotObservedPoints.push_back( ReadVal );  // add to the tester's store of unobserved points
-      // std::cout << "Read " << ReadVal.first << " " << ReadVal.second << std::endl;
     }
     std::cout << "PopulateForEval loaded " << mNotObservedPoints.size() << " unobserved test points" << std::endl;
   }
