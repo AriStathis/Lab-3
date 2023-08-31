@@ -2,15 +2,14 @@
 #define _OCCUPANCYMAPHSET_H
 
 #include "OccupancyMapBase.h"
-#include <string>
-#include <utility>       
-#include <vector>
-#include <set>
 
+//---COccupancyMapSet---------------------------------------------
+// Set class for storing and checking the occupancy map
+// Re-written pure virtual functions in the parent class 
+// Funcitonality of the container: adding pairs into the set, checking if occupied, naming the approach
 class COccupancyMapSet: public COccupancyMapBase
 {
     public:
-        //COccupancyMapSet();
         void AddOccupiedLocation(std::pair<int,int> Location);
         bool CheckIsOccupied( std::pair<int,int> Location );
         std::string GetNameOfApproach();       

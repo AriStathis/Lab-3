@@ -4,13 +4,17 @@
 #include "TestMap.h"
 #include <iostream>
 
-//-----------------------------------------------------------------------------
 int main()
 {
-  CTestMap Test;
-  Test.TestVector();
-  Test.TestSet();
-
+  // Comprehensive testing
+  {
+    // Initialise test class 
+    CTestMap Test;
+    
+    // Testing vector and set methods
+    Test.TestVector();
+    Test.TestSet();
+  }
   return 0;
 }
 

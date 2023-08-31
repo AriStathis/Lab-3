@@ -2,11 +2,11 @@
 #define _OCCUPANCYMAPHVECTOR_H
 
 #include "OccupancyMapBase.h"
-#include <string>
-#include <utility>       
-#include <vector>
-#include <set>
 
+//---COccupancyMapVector------------------------------------------
+// Child class from COccupancyMapBase
+// Re-written pure virtual functions
+// Functionality relating to the container (Add and check occupied locations, naming the approach used)
 class COccupancyMapVector: public COccupancyMapBase
 {
     public:

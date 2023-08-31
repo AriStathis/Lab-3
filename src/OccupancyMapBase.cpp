@@ -1,15 +1,13 @@
 // OccupancyMap_Base.cpp
 //
 // Base class for an occupancy map
-// 
-// Initial revision: Donald G Dansereau, 2022
 #include "OccupancyMapBase.h"
 #include <iostream>
 #include <string>
-#include <utility>        // std::pair
+#include <utility>        
 #include <vector>
-#include <chrono>         // for measuring duration of function call
-#include <fstream>        // ifstream
+#include <chrono>         
+#include <fstream>        
 
 //--Load up a file and populate the map for testing-------------------------------------------------------
 void COccupancyMapBase::PopulateForEval( std::string ObservationsFName, std::string NotObservedFName )

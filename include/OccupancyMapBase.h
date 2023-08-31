@@ -21,8 +21,9 @@
 #define _OCCUPANCYMAPBASE_H
 
 #include <string>
-#include <utility>        // std::pair
+#include <utility>        
 #include <vector>
+#include <set>
 
 //----------------------------------------------------------------------------------------------------------
 // Base class for an occupancy map.
@@ -56,14 +57,14 @@ class COccupancyMapBase
     // The whole process is timed, and the timing results printed to std::cout.
     void EvalPerformance( std::string ObservationsFName, std::string NotObservedFName );
     
-  protected:
+  private:
     //--Data------------------------------------------------------------------------------------------------
-    std::vector<std::pair<int, int>> mObservedPoints;    // A set of test points that correspond to observations
-    std::vector<std::pair<int, int>> mNotObservedPoints; // A set of test points that don't correspond to observations
+    std::vector<std::pair<int, int>> mObservedPoints;                                             // A set of test points that correspond to observations
+    std::vector<std::pair<int, int>> mNotObservedPoints;                                          // A set of test points that don't correspond to observations
    
     //--Helper Functions------------------------------------------------------------------------------------
-    void PopulateForEval( std::string ObservationsFName, std::string NotObservedFName );   // load a file of test points for testing
-    double FindTotRuntime();                     // validate and time a derived-class map, returns runtime in ms
+    void PopulateForEval( std::string ObservationsFName, std::string NotObservedFName );          // load a file of test points for testing
+    double FindTotRuntime();                                                                      // validate and time a derived-class map, returns runtime in ms
 };
 
 #endif 
